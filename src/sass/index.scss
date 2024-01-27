@@ -1,2 +1,168 @@
 @import './common';
 @import './example';
+
+html{
+    box-sizing: border-box;
+}
+
+*{
+    box-sizing: inherit;
+}
+
+body{
+    padding: 0px;
+    margin: 0;
+
+    font-family: sans-serif;
+
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    padding: 0;
+    margin: 0;
+}
+
+button{
+    all: unset;
+}
+
+
+
+/* /////// */
+
+section{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/wood.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  
+  }
+  
+  .calculator{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    padding: 15px;
+    padding-top: auto;
+    width: 350px;
+    height: 650px;
+    border: 2px #6e6c6c solid;
+    border-radius: 20px;
+    background: #000;
+    box-shadow: 4px 4px 4px #2a2a2a;
+    color: #fff;
+    font-size: 26px;    
+  }
+
+  .output-container{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-around;
+    width: 100%;
+    height: 240px;
+  }
+
+  .output{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-size: 50px;
+  }
+
+  .alternative-output{
+    font-size: 20px;
+    opacity: 0.7;
+    transition: all 250ms linear;
+  }
+
+  .longOutputStyle{
+    font-size: 30px;
+  }
+
+
+
+  .buttons{
+    display: flex;
+    justify-content: space-between;
+    
+  }
+
+  .buttons__auxiliary-operators{
+    display: flex;
+    gap: 11px;
+    margin-bottom: 11px;
+  }
+
+  .buttons__auxiliary-operators .button{
+    background-color: rgba(222, 219, 219, 0.737);
+  }
+
+  .buttons__operators .button{
+    margin-bottom: 11px;
+    background-color: #ffa600e1;
+  }
+  
+  .buttons__numbers{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 11px;
+    
+  }
+
+  .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #4f4f4f;
+
+    cursor: pointer;
+    transition: all 150ms linear;
+  }
+
+  .button-zero{
+    width: 151px;
+    border-radius: 50px;
+  }
+
+  .button:hover,
+  .button:focus{
+    filter: brightness(120%);
+  }
+
+  .button:active{
+    filter: brightness(80%);
+  }
